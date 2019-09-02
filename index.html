@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>Conversor</title>
+</head>
+<body>
+    <script src="js/principal.js"></script>
+    
+    <form class = "temp" name="convert">
+
+            <font color="black"> Fahrenheit: </font> 
+    
+            <input type="text" name="ftemp" size="7" oninput="convertTemp('fahrenheit')">
+    
+            <font color="black"><br><br> Celsius: </font>
+    
+            <input type="text" name="ctemp" size="7" oninput="convertTemp('celsius')">
+    
+            <font color="black"><br><br> Kelvin: </font>
+    
+            <input type="text" name="ktemp" size="7" oninput="convertTemp('kelvin')">
+    
+            <br /><br />
+    
+            <input id="limpar" type="button" value="limpar" onclick="clearAll();">
+    
+        </form>
+</body>
+
+</html>
