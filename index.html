@@ -11,21 +11,26 @@
 <body>
     <script src="js/principal.js"></script>
     
+    <!-- Form com os inputs para o conversor -->
     <form class = "temp" name="convert">
 
-            <font color="black"> Fahrenheit: </font> 
+            <h4>Fahrenheit:</h4>
     
             <input type="text" name="ftemp" size="7" oninput="convertTemp('fahrenheit')">
     
-            <font color="black"><br><br> Celsius: </font>
+            <br><br>
+
+            <h4>Celsius:</h4>
     
             <input type="text" name="ctemp" size="7" oninput="convertTemp('celsius')">
     
-            <font color="black"><br><br> Kelvin: </font>
+            <br><br> 
+            
+            <h4>Kelvin:</h4>
     
             <input type="text" name="ktemp" size="7" oninput="convertTemp('kelvin')">
     
-            <br /><br />
+            <br><br>
     
             <input id="limpar" type="button" value="limpar" onclick="clearAll();">
     

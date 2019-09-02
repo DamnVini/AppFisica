@@ -1,3 +1,5 @@
+// Function que pega o campo selecionado e converte
+
 function convertTemp(InputHolder) {
 
     var fObj = document.convert.ftemp;
@@ -27,6 +29,7 @@ function convertTemp(InputHolder) {
     }
 }
 
+// Limpa todos os campos
 function clearAll() 
 {
     document.convert.ftemp.value = "";
