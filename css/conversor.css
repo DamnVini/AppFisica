@@ -5,3 +5,55 @@
 #input{
     font-size: 2em;
 }
+
+#test
+{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+#kelvinNegativo
+{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.animated {
+    animation-delay: 4s;
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top:95px;
+    margin-bottom:60px;
+    -webkit-animation-duration: 4s;animation-duration: 4s;
+    -webkit-animation-fill-mode: both;animation-fill-mode: both;
+ }
+ 
+ @-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+ }
+ 
+ @keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+ }
+ 
+ .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+ }
+
+ .shake {
+    animation: 1.5s shake;
+  }
+  
+  @keyframes shake {
+    0% { transform: skewX(-40deg); }
+    5% { transform: skewX(40deg); }
+    10% { transform: skewX(-40deg); }
+    15% { transform: skewX(40deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+  }
