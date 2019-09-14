@@ -21,6 +21,7 @@
 }
 
 .animated {
+    position: sticky;
     animation-delay: 4s;
     background-repeat: no-repeat;
     background-position: left top;
@@ -56,4 +57,10 @@
     15% { transform: skewX(40deg); }
     20% { transform: skewX(0deg); }
     100% { transform: skewX(0deg); }  
+  }
+
+  #animated-example
+  {
+    position: absolute;
+    
   }

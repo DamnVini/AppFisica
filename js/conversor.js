@@ -49,7 +49,6 @@ function Limpar()
 
 function KelvinNegativo() 
 {
-    var OnScreen;
     document.getElementById("alert").innerHTML += 
     "<div id=" + HTMLDivId + " class=" + HTMLDivClass + "> <h3 class=" + HTMLshake + ">ERRO!</h3> <p class=" + HTMLshake + ">Kelvin NÃO pode ser negativo!</p></div>";
 }
