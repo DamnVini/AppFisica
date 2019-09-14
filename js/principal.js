@@ -1,26 +1,26 @@
 // Function que pega o campo selecionado e converte
 
-function convertTemp(InputHolder) {
+function conversor(Input) {
 
     var fObj = document.convert.ftemp;
     var cObj = document.convert.ctemp;
     var kObj = document.convert.ktemp;
 
-    if (InputHolder == "fahrenheit") 
+    if (Input == "fahrenheit") 
     {
 
         cObj.value = Math.round((fObj.value - 32) * (5 / 9));
         kObj.value = Math.round(((fObj.value - 32) * (5 / 9)) + (273.15));
 
     }
-    else if (InputHolder == "kelvin") 
+    else if (Input == "kelvin") 
     {
 
         fObj.value = Math.round((kObj.value - 273.15) * (9 / 5)) + 32; 
         cObj.value = Math.round((fObj.value - 32) * (5 / 9));
 
     }
-    else 
+    else if (Input == "celsius")
     {
 
         fObj.value = Math.round((parseInt(cObj.value) * (9 / 5)) + 32);
