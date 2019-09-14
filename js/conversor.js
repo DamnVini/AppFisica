@@ -9,22 +9,22 @@ function conversor(Input) {
     if (Input == "fahrenheit") 
     {
 
-        cObj.value = Math.round((fObj.value - 32) * (5 / 9));
-        kObj.value = Math.round(((fObj.value - 32) * (5 / 9)) + (273.15));
+        cObj.value = ((fObj.value - 32) * (5 / 9)).toFixed(2);
+        kObj.value = (((fObj.value - 32) * (5 / 9)) + (273.15)).toFixed(2);
 
     }
     else if (Input == "kelvin") 
     {
 
-        fObj.value = Math.round((kObj.value - 273.15) * (9 / 5)) + 32; 
-        cObj.value = Math.round((fObj.value - 32) * (5 / 9));
+        fObj.value = ((kObj.value - 273.15) * (9 / 5) + 32).toFixed(2); 
+        cObj.value = ((fObj.value - 32) * (5 / 9)).toFixed(2);
 
     }
     else if (Input == "celsius")
     {
 
-        fObj.value = Math.round((parseInt(cObj.value) * (9 / 5)) + 32);
-        kObj.value = Math.round((parseInt(cObj.value) + 273));
+        fObj.value = ((parseInt(cObj.value) * (9 / 5)) + 32).toFixed(2);
+        kObj.value = ((parseInt(cObj.value) + 273)).toFixed(2);
 
     }
 }
